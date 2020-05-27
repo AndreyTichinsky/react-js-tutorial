@@ -66,6 +66,19 @@ React and JSX
 
 [Presentation](https://docs.google.com/presentation/d/1t96SBbpVXh7mPr3G_zsa6cVaCJKR6b4Bl9XnYY6-KHs/edit?usp=sharing)
 
+## Lesson 7:
+
+* React lifecycles
+* React state/props
+* PureComponent
+
+[Sandbox with examples](https://codesandbox.io/s/random-images-v9wmt)
+
+[Sandbox with react-hooks](https://codesandbox.io/s/condescending-lewin-hbzpe)
+
+[Pull request](https://github.com/nickovchinnikov/react-js-tutorial/pull/13)
+
+[Presentation](https://docs.google.com/presentation/d/1xRNMkPFhoB3dnrnjQjAGeOumkjjYcga7g0O23UVYYK0/edit?usp=sharing)
 
 ## Lesson 8:
 * Списки
@@ -76,3 +89,68 @@ React and JSX
 [Pull request](https://github.com/nickovchinnikov/react-js-tutorial/pull/14/)
 
 [Presentation](https://docs.google.com/presentation/d/1-dCyyIYT0sgeITNLKeSIBufGiuiBKoGRYpeO3pdlZlY/edit?usp=sharing)
+
+## Lesson 9:
+React Patterns
+* function component;
+* destructuring props;
+* JSX spread attributes;
+* merge destructured props with other values;
+* conditional rendering;
+* children types;
+* array as children;
+* function as children;
+* render prop;
+* children pass-through;
+* proxy component;
+* style component.
+
+
+[Pull request](https://github.com/nickovchinnikov/react-js-tutorial/pull/18/)
+
+[Presentation](https://docs.google.com/presentation/d/1Y2TtBz19oXIJgfnddar9v-6m7LYLdKEr4ejibU2YuWQ/edit?usp=sharing)
+
+[Code samples](https://codesandbox.io/s/react-patterns-5huin)
+
+
+## Lesson 10:
+* React Patterns
+* Event switch
+* Layout component
+* Container component
+* Higher-order component
+* State hoisting
+* Controlled input
+
+
+[Pull request](https://github.com/nickovchinnikov/react-js-tutorial/pull/19)
+
+[Presentation](https://docs.google.com/presentation/d/1rbPStqB8Q7inem-HH72QpUQxK5Ux7cCEjmR0Zzu_8jk/edit?usp=sharing)
+
+## Lesson 11:
+* React Hooks
+* Hooks testing
+* React Fiber
+
+[Pull request](https://github.com/nickovchinnikov/react-js-tutorial/pull/20) <br>
+[Presentation](https://docs.google.com/presentation/d/1ASdPCTPObKZHHfFvd2RARfmHeq4EvHM8x-YBMCzGcb4/edit?usp=sharing) <br>
+[Code samples](https://codesandbox.io/s/react-hooks-c3jf4?file=/src/index.tsx)
+
+## Lesson 12:
+* React Router
+
+[Pull request](https://github.com/nickovchinnikov/react-js-tutorial/pull/21) <br>
+[Presentation](https://drive.google.com/file/d/19xQYJASeA3HQf0tR-tQ3J_I6MRyoHRvw/view?usp=sharing) <br>
+
+## Lesson 13
+* Functional programming
+
+[Pull request](https://github.com/nickovchinnikov/react-js-tutorial/pull/22) <br>
+[Presentation](https://otus-lesson-fp.saitonakamura.now.sh/) <br>
+
+
+## Lesson 14:
+* Redux
+
+[Pull request](https://github.com/nickovchinnikov/react-js-tutorial/pull/23) <br>
+[Presentation](https://drive.google.com/file/d/1VezGwpkXUV38X-pL48j9ZjC58ASPuTPl/view?usp=sharing) <br>

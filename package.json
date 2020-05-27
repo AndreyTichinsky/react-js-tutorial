@@ -45,10 +45,13 @@
     "@storybook/addon-storysource": "^5.3.18",
     "@storybook/addons": "^5.3.18",
     "@storybook/react": "^5.3.18",
+    "@testing-library/react-hooks": "^3.2.1",
     "@types/enzyme": "^3.10.5",
     "@types/jest": "^25.1.4",
+    "@types/ramda": "^0.27.6",
     "@types/react": "^16.9.33",
     "@types/react-dom": "^16.9.6",
+    "@types/react-router-dom": "^5.1.5",
     "@types/react-test-renderer": "^16.9.2",
     "@typescript-eslint/eslint-plugin": "^2.25.0",
     "@typescript-eslint/parser": "^2.25.0",
@@ -62,6 +65,7 @@
     "eslint-config-prettier": "^6.10.1",
     "eslint-plugin-prettier": "^3.1.2",
     "eslint-plugin-react": "^7.19.0",
+    "eslint-plugin-react-hooks": "^4.0.0",
     "html-webpack-plugin": "^4.0.3",
     "husky": "^4.2.3",
     "jest": "^25.2.4",
@@ -81,8 +85,11 @@
     "@emotion/core": "^10.0.28",
     "@emotion/styled": "^10.0.27",
     "formik": "^2.1.4",
+    "ramda": "^0.27.0",
     "react": "^16.13.1",
-    "react-dom": "^16.13.1"
+    "react-dom": "^16.13.1",
+    "react-router-dom": "^5.2.0",
+    "redux": "^4.0.5"
   },
   "loki": {
     "configurations": {

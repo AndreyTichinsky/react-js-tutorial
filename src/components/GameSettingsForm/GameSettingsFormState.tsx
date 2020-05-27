@@ -1,5 +1,8 @@
-import React from "react";
+import React, { FormEvent } from "react";
 import { GameSettingsFormProps } from "./interfaces";
+import { SYMBOL_OPTIONS } from "./constants";
+import { InputColor, InputText } from "./components";
+import { Select } from "./components/Select/Select";
 
 interface GameSettingsFormStateState {
   player1Name: string;
@@ -39,14 +42,17 @@ export class GameSettingsFormState extends React.Component<
     });
   };
 
-  handleFormChange = (prop: keyof GameSettingsFormStateState) => (
-    ev: React.ChangeEvent
-  ) => {
-    this.setState(
-      {
-        [prop]: (ev.target as HTMLInputElement).value,
-      } as any /** don't do this in real projects. Better to have multiple setters */
-    );
+  componentDidUpdate() {
+    console.log("@@GameSettingsFormState.componentDidUpdate");
+  }
+
+  handleFormInputChange = (ev: FormEvent<HTMLInputElement>) => {
+    this.setState({
+      [(ev.target as HTMLInputElement).getAttribute(
+        "name"
+      ) as keyof GameSettingsFormStateState]: (ev.target as HTMLInputElement)
+        .value,
+    } as any);
   };
 
   render() {
@@ -58,67 +64,57 @@ export class GameSettingsFormState extends React.Component<
             <legend>Player 1</legend>
             <label>
               Name:
-              <input
-                type="text"
+              <InputText
                 placeholder="Player 1 name"
                 required
+                name="player1Name"
                 value={this.state.player1Name}
-                onChange={this.handleFormChange("player1Name")}
+                onChange={this.handleFormInputChange}
               />
             </label>
             <label>
               Color:
-              <input
-                type="color"
+              <InputColor
+                name="player1Color"
                 value={this.state.player1Color}
-                onChange={this.handleFormChange("player1Color")}
+                onChange={this.handleFormInputChange}
               />
             </label>
-            <label>
-              Symbol:
-              <select
-                defaultValue="X"
-                onChange={this.handleFormChange("player1Symbol")}
-                value={this.state.player1Symbol}
-              >
-                <option>X</option>
-                <option>Y</option>
-                <option>O</option>
-              </select>
-            </label>
+            <Select
+              label="Symbol"
+              name="player1Symbol"
+              defaultValue="X"
+              options={SYMBOL_OPTIONS}
+              onChange={this.handleFormInputChange}
+            />
           </fieldset>
           <fieldset>
             <legend>Player 2</legend>
             <label>
               Name:
-              <input
-                type="text"
+              <InputText
                 placeholder="Player 2 name"
                 required
+                name="player2Name"
                 value={this.state.player2Name}
-                onChange={this.handleFormChange("player2Name")}
+                onChange={this.handleFormInputChange}
               />
             </label>
             <label>
               Color:
-              <input
-                type="color"
+              <InputColor
+                name="player2Color"
                 value={this.state.player2Color}
-                onChange={this.handleFormChange("player2Color")}
+                onChange={this.handleFormInputChange}
               />
             </label>
-            <label>
-              Symbol:
-              <select
-                defaultValue="O"
-                value={this.state.player2Symbol}
-                onChange={this.handleFormChange("player2Symbol")}
-              >
-                <option>X</option>
-                <option>Y</option>
-                <option>O</option>
-              </select>
-            </label>
+            <Select
+              label="Symbol"
+              name="player2Symbol"
+              defaultValue="X"
+              options={SYMBOL_OPTIONS}
+              onChange={this.handleFormInputChange}
+            />
           </fieldset>
           <button>Start</button>
         </fieldset>
