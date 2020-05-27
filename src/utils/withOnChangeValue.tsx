@@ -12,6 +12,13 @@ export const withOnChangeValue = <P extends object>(
     onChangeValue?: (newText: string) => void;
   }
 ) => {
-  // put your code here
-  return null;
+  const onChange = (ev: React.ChangeEvent) => {
+    if (props.onChange) {
+      props.onChange(ev);
+    }
+    if (props.onChangeValue) {
+      props.onChangeValue((ev.target as HTMLInputElement).value);
+    }
+  };
+  return <Component {...props} onChange={onChange} />;
 };
