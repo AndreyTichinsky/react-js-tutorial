@@ -145,7 +145,8 @@ React Patterns
 ## Lesson 13
 * Functional programming
 
-[Pull request](https://github.com/nickovchinnikov/react-js-tutorial/pull/22) <br>
+[Pull request examples](https://github.com/nickovchinnikov/react-js-tutorial/pull/24) <br>
+[Pull request homework](https://github.com/nickovchinnikov/react-js-tutorial/pull/25) <br>
 [Presentation](https://otus-lesson-fp.saitonakamura.now.sh/) <br>
 
 
@@ -154,3 +155,32 @@ React Patterns
 
 [Pull request](https://github.com/nickovchinnikov/react-js-tutorial/pull/23) <br>
 [Presentation](https://drive.google.com/file/d/1VezGwpkXUV38X-pL48j9ZjC58ASPuTPl/view?usp=sharing) <br>
+
+
+## Lesson 15:
+* React + Redux
+
+[Pull request](https://github.com/nickovchinnikov/react-js-tutorial/pull/27) <br>
+[Presentation](https://docs.google.com/presentation/d/1kng-DBHU91jQqjWHQVOMNMZjjfe8zawS8zzLP44TnuM/edit?usp=sharing) <br>
+
+## Lesson 16:
+* React + Redux
+
+[Pull request](https://github.com/nickovchinnikov/react-js-tutorial/pull/28) <br>
+[Presentation](https://docs.google.com/presentation/d/1cjlHeq53IoWMmQFYSrzmOgiqS6TIEeRIrbCxZ7GjXVc/edit?usp=sharing) <br>
+
+## Lesson 17
+* Redux middlewares
+
+[Pull request](https://github.com/nickovchinnikov/react-js-tutorial/pull/34) <br>
+[Homework](https://github.com/nickovchinnikov/react-js-tutorial/pull/35) <br>
+[Presentation](https://otus-lesson-react-middlewares.now.sh/) <br>
+
+## Lesson 18
+* Generators
+* Redux-saga intro
+
+[Pull request 1](https://github.com/nickovchinnikov/react-js-tutorial/pull/31) <br>
+[Pull request 2](https://github.com/nickovchinnikov/react-js-tutorial/pull/37) <br>
+[Pull request 3](https://github.com/nickovchinnikov/react-js-tutorial/pull/39) <br>
+[Presentation](https://docs.google.com/presentation/d/1qy80sZm6epqa3ZRtMsx-qsPMO3HaVDnjZuZOB7iDFj4/edit?usp=sharing) <br>

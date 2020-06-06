@@ -1,4 +1,4 @@
-import { sleep } from '@/utils/sleep';
+import { sleep } from "@/utils/sleep";
 
 export const login = async (name: string) => {
   await sleep(1000);
@@ -12,8 +12,13 @@ export const logout = async () => {
   await localStorage.removeItem("login");
 };
 
-export const isLoggedIn = async () => {
+export const getUserSession = async () => {
   await sleep(2000);
   const login = await localStorage.getItem("login");
+  return login;
+};
+
+export const isLoggedIn = async () => {
+  const login = await getUserSession();
   return Boolean(login);
 };
