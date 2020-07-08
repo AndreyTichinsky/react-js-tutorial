@@ -23,10 +23,9 @@ export const probability: Middleware = ({
   getState,
 }: MiddlewareAPI) => (next: Dispatch) => (action: any) => {
   if (action.meta && action.meta.probability) {
-    if (action.meta.probability > 0.5) {
+    if (1 - Math.random() <= action.meta.probability) {
       return next(action);
     }
-    throw new Error("Bad Luck Today!");
   } else {
     return next(action);
   }

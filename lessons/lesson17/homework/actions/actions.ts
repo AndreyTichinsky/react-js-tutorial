@@ -27,9 +27,9 @@ export function errorCreator(payload: Error | string) {
 }
 
 export const ANALYTICS_CLICK = "ANALYTICS_CLICK";
-export function analyticsClickCreator(payload: any) {
+export function analyticsClickCreator() {
   return {
     type: ANALYTICS_CLICK,
-    probability: payload,
+    probability: 0.5,
   };
 }
