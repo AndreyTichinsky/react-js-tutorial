@@ -11,3 +11,14 @@ src/lesson17/homework/thunk.ts
 +1 балл за тесты
 
 */
+import { MiddlewareAPI, Dispatch, Middleware } from "redux";
+
+export const thunk: Middleware = ({ dispatch, getState }: MiddlewareAPI) => (
+  next: Dispatch
+) => (action) => {
+  if (typeof action === "function") {
+    return action(dispatch, getState);
+  }
+
+  return next(action);
+};

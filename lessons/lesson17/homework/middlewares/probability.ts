@@ -16,3 +16,17 @@ probablity это число от 0 до 1
 +1 балл за тесты
 
 */
+import { MiddlewareAPI, Dispatch, Middleware } from "redux";
+
+export const probability: Middleware = ({
+  dispatch,
+  getState,
+}: MiddlewareAPI) => (next: Dispatch) => (action: any) => {
+  if (action.meta && action.meta.probability) {
+    if (1 - Math.random() <= action.meta.probability) {
+      return next(action);
+    }
+  } else {
+    return next(action);
+  }
+};
